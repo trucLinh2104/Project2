@@ -19,7 +19,8 @@ body{
 :root{
     --primary: #FFFCF4;
     --secondary: #171100;
-    --tertiary: #FFB900;
+    --tertiary: #adaba6;
+    --four: #FFB900;
     --color-primary: #FFB900;
 }
 .content{
@@ -48,7 +49,7 @@ a{
     height: 100vh;
     background-color: var(--primary);
 }
-
+    /*Nav*/
 .nav{
     width: 100%;
     padding-top: 36px;
@@ -67,7 +68,6 @@ a{
     gap:70px
 }
 
-
 .nav .list{
     right: 70px;
     display: flex;
@@ -84,10 +84,89 @@ a{
     align-items: center;
 
 }
+
 .nav a strong{
     font-size: 1.6rem;
     font-style: normal;
     font-weight: 600;
     line-height:1.75; /* 175% */
 }
+    /*Hero*/
+.hero{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    background-color: var(--tertiary);
+}
+.hero .item1{
+    width:  50%;
 
+}
+.hero .item1 > img{
+    width: 470px;
+    height: 685px;
+    border-radius: 10px;
+}
+.hero .item2{
+    width: 50%;
+    padding-left:60px;
+    padding-top:64px;
+}
+
+.hero .item2 .title{
+    color: #171100;
+    font-size: 5.8rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height:1.17; /* 117.241% */
+    letter-spacing: -1.16px;
+    margin-bottom: 22px;
+}
+
+.hero .item2 .desc, .hero .item2 .desc2{
+    color: #5F5B53;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.66; /* 166.667% */
+    margin-bottom: 38px;
+}
+
+.hero .item2 .action{
+    display: flex;
+    gap:30px;
+    margin-bottom: 65px;
+}
+
+.hero .action .btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--four);
+}
+
+.hero .action .btn > strong{
+    color: #FFF;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.66; /* 166.667% */
+}
+.hero .action .btn-play{
+    min-width: 10%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap:16px;
+}
+.hero .action .play_btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 50%;
+}
